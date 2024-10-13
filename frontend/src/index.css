@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card {
+  @apply w-full cursor-pointer rounded-md h-44 self-end;
+}
+.card-active {
+  @apply h-72;
+}

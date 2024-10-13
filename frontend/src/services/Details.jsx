@@ -1,0 +1,88 @@
+import bac1 from "../assets/bac-1.png";
+import bac2 from "../assets/bac-2.png";
+import bac3 from "../assets/bac-4.png";
+import bac5 from "../assets/bac-5.png";
+export const formFields = [
+  {
+    id: "firstName",
+    name: "firstn",
+    label: "First name",
+    placeholder: "Enter your first name",
+    arabicLabel: "الاسم",
+    type: "text",
+    required: true,
+  },
+  {
+    id: "lastName",
+    name: "lastn",
+    label: "Last name",
+    placeholder: "Enter your last name",
+    arabicLabel: "اللقب",
+    type: "text",
+    required: true,
+  },
+  {
+    id: "email",
+    name: "email",
+    label: "Email Address",
+    placeholder: "Enter your email",
+    arabicLabel: "البريد الإلكتروني",
+    type: "email",
+    required: true,
+  },
+  {
+    id: "mobile",
+    name: "phone",
+    label: "Mobile Number",
+    placeholder: "Enter mobile number",
+    arabicLabel: "رقم الهاتف",
+    type: "number",
+    required: true,
+  },
+  {
+    id: "academicLevel",
+    name: "academiclevel",
+    label: "Academic Level",
+    placeholder: "Enter your academic level",
+    arabicLabel: "المستوى الدراسي",
+    type: "text",
+    required: true,
+  },
+  {
+    id: "speciality",
+    name: "speciality",
+    label: "Speciality",
+    placeholder: "Enter your speciality",
+    arabicLabel: "التخصص",
+    type: "text",
+    required: true,
+  },
+  {
+    id: "faculty",
+    name: "faculty",
+    label: "The Faculty you study at",
+    placeholder: "Enter faculty",
+    arabicLabel: "الكلية التي تدرس بها",
+    type: "text",
+    required: true,
+  },
+  {
+    id: "hobby",
+    name: "hobby",
+    label: "Hobby",
+    placeholder: "Enter your hobby",
+    arabicLabel: "الهواية",
+    type: "text",
+    required: true,
+  },
+  {
+    id: "clubAnswer",
+    name: "club",
+    label: "What do you know about Badrat Khayr Club?",
+    placeholder: "Write your answer",
+    arabicLabel: "ماذا تعرف عن نادي بذرة خير؟",
+    type: "textarea",
+    required: true,
+  },
+];
+export const sliderContent = [bac1, bac2, bac3, bac5];
