@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.card {
-  @apply w-full cursor-pointer rounded-md h-44 self-end;
-}
-.card-active {
-  @apply h-72;
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
 }

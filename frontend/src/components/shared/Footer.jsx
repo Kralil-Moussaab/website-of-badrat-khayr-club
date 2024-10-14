@@ -35,19 +35,19 @@ export default function Footer() {
         <div className="flex items-center space-x-0 border border-1 rounded-md border-gray-one7">
           <div className="flex space-x-1 md:space-x-2 p-2">
             <a
-              href="#"
+              href="https://www.facebook.com/BADRATKHAYR17?mibextid=ZbWKwL"
               className="bg-gradient-social flex justify-center  items-center p-2 rounded-md border border-1 border-gray-one7"
             >
               <FaFacebookF className="bg-white p-1 h-6 w-6 rounded-full" />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/badratkhayr17?igsh=MWZoMWV3bWJ5bXB6OQ=="
               className="bg-gradient-social flex justify-center  items-center p-2 rounded-md border border-1 border-gray-one7"
             >
               <FaInstagram className="bg-white p-1 h-6 w-6 rounded-full" />
             </a>
             <a
-              href="#"
+              href="https://www.tiktok.com/@badrat_khayr?_t=8qXCXwt9q4L&_r=1"
               className="bg-gradient-social flex justify-center  items-center p-2 rounded-md border border-1 border-gray-one7"
             >
               <FaTiktok className="bg-white p-1 h-6 w-6 rounded-full" />
@@ -64,7 +64,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center border-b-2 lg:mt-0 mt-2 border-gray-one7 pb-2 space-x-2">
             <BsFillTelephoneFill className=" text-green-one7 text-lg" />
-            <span className="text-white">+213600000000</span>
+            <span className="text-white">+213658532748</span>
           </div>
           <div className="flex items-center mx-auto sm:mx-0 border-b-2 lg:mt-0 mt-2 border-gray-one7 pb-2 space-x-2">
             <FaLocationDot className=" text-green-one7 text-lg" />

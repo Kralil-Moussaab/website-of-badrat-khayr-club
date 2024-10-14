@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
-import { sliderContent } from "../services/Details";
+import { sliderContent, CategoiesEvents } from "../services/Details";
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
           </h3>
         </div>
       </div>
-      <div className="mx-24 my-10 md:my-24 lg:my-32">
+      <div className="mx-10 lg:mx-24 my-10 md:my-24 lg:my-32">
         <div className="flex flex-col md:flex-row gap-4 lg:gap-60 justify-evenly items-center">
           <div className="text-center">
             <h1 className="text-2xl sm:text-4xl lg:text-6xl pb-5">
@@ -45,11 +45,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mx-24 my-20">
+      <div className="mx-10 lg:mx-24 my-20">
         <h1 className="text-4xl lg:text-5xl mb-6 text-center font-medium lg:font-semibold">
           Next Event
         </h1>
-        <div className="flex flex-col md:flex-row gap-4 lg:gap-40 justify-evenly items-center">
+        <div className="flex flex-col md:flex-row gap-16 lg:gap-40 justify-evenly items-center">
           <div className="relative w-64 sm:w-96 lg:w-[34rem] mt-5 sm:mt-2">
             <div className="absolute w-full h-full rounded-tl-lg rounded-br-lg border border-1 border-dark-one7  left-4 top-4 z-0"></div>
             <img
@@ -62,27 +62,47 @@ export default function Home() {
             <h1 className="text-2xl sm:text-4xl text-green-bk lg:text-6xl pb-5">
               Welcome Day 17 October
             </h1>
-            <p className="text-gray-600">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics, a
-              large language ocean.
+            <p className="text-gray-600 pb-1">
+              Badrat Khayr Club is honored to invite you to attend its fifth
+              foundation anniversary celebration since october 17th,2019.
+            </p>
+            <p className="text-gray-600 pb-1">
+              We&apos;re excited to bring you a one-of-a-kind event, filled with
+              engaging activities that we can’t wait to share with you.{" "}
+            </p>
+            <p className="text-gray-600 pb-1">
+              We&apos;re excited to bring you a one-of-a-kind event, filled with
+              engaging activities that we can’t wait to share with you.{" "}
             </p>
           </div>
         </div>
       </div>
-      <div className="mx-24 my-20">
+      <div className="mx-10 lg:mx-24 my-20">
         <h1 className="text-4xl lg:text-5xl mb-6 text-center font-medium lg:font-semibold">
           Our Last Event
         </h1>
-        <p className="text-center px-44 text-gray-800 text-xl mb-6">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis,
-          iste? Molestias iste recusandae dolorem aperiam omnis aspernatur earum
-          atque facere, enim, accusamus ipsum labore saepe, rem fugit incidunt
-          molestiae distinctio.
+        <p className="text-center lg:px-44 text-gray-800 text-xl mb-2">
+          Badrat Khayr Club organised a free, comprehensive revision for 2024
+          Baccalaureate students in the following fields:
         </p>
+        <p className="text-center flex flex-col justify-center items-center lg:px-44 text-gray-800 text-xl mb-2">
+          <span>✓ Experimental Sciences</span>
+          <span>✓ Mathematics</span>
+          <span>✓ Technical Sciences</span>
+          <span>✓ Management and Economics</span>
+          <span>✓ Foreign Languages</span>
+          <span>✓ Literature and Philosophy</span>
+        </p>
+        <p className="text-center lg:px-44 text-gray-800 text-xl mb-5">
+          Led by a group of outstanding subject teachers, the revision session
+          ran for a full week from 26th to 30th May at the Faculty of Economic,
+          Commercial, and Management Sciences.
+        </p>
+        <h3 className="text-2xl lg:text-3xl text-green-bk mb-6 text-center font-medium lg:font-semibold">
+          Some pictures from BAC 2024
+        </h3>
         <div className="flex justify-center items-center">
-          <div className="max-w-80 sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl">
+          <div className="max-w-[17rem] sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl">
             <Swiper
               effect={"cards"}
               grabCursor={true}
@@ -96,6 +116,25 @@ export default function Home() {
               ))}
             </Swiper>
           </div>
+        </div>
+      </div>
+      <div className="mx-10 lg:mx-24 my-20">
+        <h1 className="text-4xl lg:text-5xl mb-6 text-center font-medium lg:font-semibold">
+          Our Categoies of Events
+        </h1>
+
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+          {CategoiesEvents.map((category, index) => (
+            <div
+              key={index}
+              className="flex group bg-white rounded-lg hover:bg-green-bk cursor-pointer transition-all duration-200 gap-4 flex-col py-4 px-6"
+            >
+              {category.icon}
+              <p className="group-hover:text-white text-2xl font-semibold">
+                {category.text}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </>
